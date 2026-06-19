@@ -51,8 +51,14 @@ p iconify-icon {
   padding: 20px;
 }
 
-.navbar h2, .navbar h1 {
+.navbar p, .navbar h1, .navbar h2 {
   background-color: rgb(25, 146, 212);
+}
+
+.navbar p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 500;
 }
 
 .header {
@@ -130,7 +136,7 @@ p iconify-icon {
 .content {
   margin-top: -60px;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 5fr 2fr;
   grid-template-rows: 30px 1fr;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -178,7 +184,29 @@ p iconify-icon {
   grid-column: 2 / 3;
 }
 
+.announcements {
+  font-size: 12px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  color: rgb(83, 83, 83);
+  border-radius: 7px;
+}
+
+.announcement-content {
+  padding: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-bottom: 1px solid rgb(206, 206, 206);
+}
+
 #announcement-title {
   font-size: 16px;
   font-weight: bold;
+  background-color: white;
+  color: black;
+}
+
+.trending {
+  margin-top: 20px;
 }
