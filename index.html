@@ -13,17 +13,38 @@
     <div class="container">
 
       <div class="navbar">
-        <h1><iconify-icon icon="streamline-logos:slack-logo-solid" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>    Dashboard</h1>
-        <p><iconify-icon icon="ic:baseline-home" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Home</p>
-        <p><iconify-icon icon="ic:baseline-person" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Profile</p>
-        <p><iconify-icon icon="ic:baseline-message" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Messages</p>
-        <p><iconify-icon icon="ic:baseline-history" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  History</p>
-        <p><iconify-icon icon="ic:baseline-check-circle" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Tasks</p>
-        <p><iconify-icon icon="ic:baseline-group" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Communities</p>
+        <div>
+          <iconify-icon icon="streamline-logos:slack-logo-solid" height="36px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><h1>Dashboard</h1>
+        </div>
         <br>
-        <h2><iconify-icon icon="ic:baseline-settings" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Settings</h2>
-        <h2><iconify-icon icon="f7:question-square-fill" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Support</h2>
-        <h2><iconify-icon icon="mdi:shield-tick" height="24px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon>  Privacy</h2>
+        <div>
+          <iconify-icon icon="ic:baseline-home" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Home</p>
+        </div>
+        <div>
+          <iconify-icon icon="ic:baseline-person" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Profile</p>
+        </div>
+        <div>
+          <iconify-icon icon="ic:baseline-message" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Messages</p>
+        </div>
+        <div>
+          <iconify-icon icon="ic:baseline-history" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>History</p>
+        </div>
+        <div>
+          <iconify-icon icon="ic:baseline-check-circle" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Tasks</p>
+        </div>
+        <div>
+          <iconify-icon icon="ic:baseline-group" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Communities</p>
+        </div>
+        <br>
+        <div>
+          <iconify-icon icon="ic:baseline-settings" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Settings</p>
+        </div>
+        <div>
+          <iconify-icon icon="f7:question-square-fill" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Support</p>
+        </div>
+        <div>
+          <iconify-icon icon="mdi:shield-tick" height="28px" style="background-color: rgb(25, 146, 212); border: 0;"></iconify-icon><p>Privacy</p>
+        </div>
       </div>
       <div class="header" id="white">
         <div class="header-top" id="white">
@@ -33,14 +54,17 @@
           </div>
           <div class="test" id="white">
             <iconify-icon icon="basil:notification-on-outline" height="24px"></iconify-icon>
-            <iconify-icon icon="emojione-v1:ghost" height="30px""></iconify-icon>         
+            <iconify-icon icon="emojione-v1:ghost" height="30px"></iconify-icon>         
             <p id="white">Morgan Oakley</p>
           </div>
         </div>
         <div class="header-bottom" id="white">
           <div class="header-left" id="white">
-            <iconify-icon icon="emojione-v1:ghost" height="50px" style="border: 0;" id="white"></iconify-icon> 
-            <p id="white">Hi there, Morgan Oakley (@morgan)</p>
+            <div style="grid-row: 1 / 3; margin-left: 20px;">
+              <iconify-icon icon="emojione-v1:ghost" height="50px" style="border: 0;" id="white"></iconify-icon> 
+            </div>
+            <p>Hi there,</p>
+            <h1>Morgan Oakley (@morgan)</h1>
           </div>
           <div class="header-right" id="white">
             <p>New</p>
@@ -52,57 +76,81 @@
       
       <div class="content">
         
-        <div style="display:grid; grid-template-columns: 3fr 1fr; grid-column: 1 / 3">
+        <div style="display:grid; grid-template-columns: 3fr 1fr; grid-column: 1 / 3;">
           <p id="title">Your Projects</p>
-          <p id="title" style="margin-left: -30px;">Announcements</p>
+          <p id="title" style="margin-left: -16px;">Announcements</p>
         </div>
         <div class="projects">  
           <div class="project">
-            <p id="project-title">Super Cool Project</p>
-            <p id="description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumasan nec.</p>
-            <p>Favorite</p>
-            <p>View</p>
-            <p>Share</p>
+            <div style="grid-column: 1 / 3">
+              <p id="project-title">Super Cool Project</p>
+              <p id="description">Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumasan nec.</p>
+            </div>
+            <div style="grid-column: 2 / 3; display: grid; gap: 15px; grid-template-columns: 1fr 1fr 1fr;">
+              <iconify-icon icon="mdi:favorite-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:eye-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:ios-share" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+            </div>
           </div>
           
           <div class="project">
-            <p id="project-title">Less Cool Project</p>
-            <p id="description">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
-            <p>Favorite</p>
-            <p>View</p>
-            <p>Share</p>
+            <div style="grid-column: 1 / 3">
+              <p id="project-title">Less Cool Project</p>
+              <p id="description">Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+            </div>
+            <div style="grid-column: 2 / 3; display: grid; gap: 15px; grid-template-columns: 1fr 1fr 1fr;">
+              <iconify-icon icon="mdi:favorite-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:eye-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:ios-share" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+            </div>
           </div>
           
           <div class="project">
-            <p id="project-title">Impossible App</p>
-            <p id="description">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
-            <p>Favorite</p>
-            <p>View</p>
-            <p>Share</p>
+            <div style="grid-column: 1 / 3">
+              <p id="project-title">Impossible App</p>
+              <p id="description">In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+            </div>
+            <div style="grid-column: 2 / 3; display: grid; gap: 15px; grid-template-columns: 1fr 1fr 1fr;">
+              <iconify-icon icon="mdi:favorite-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:eye-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:ios-share" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+            </div>
           </div>
           
           <div class="project">
-            <p id="project-title">Easy Peasy App</p>
-            <p id="description">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
-            <p>Favorite</p>
-            <p>View</p>
-            <p>Share</p>
+            <div style="grid-column: 1 / 3">
+              <p id="project-title">Easy Peasy App</p>
+              <p id="description">Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+            </div>
+            <div style="grid-column: 2 / 3; display: grid; gap: 15px; grid-template-columns: 1fr 1fr 1fr;">
+              <iconify-icon icon="mdi:favorite-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:eye-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:ios-share" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+            </div>
           </div>
           
           <div class="project">
-            <p id="project-title">Ad Blocker</p>
-            <p id="description">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
-            <p>Favorite</p>
-            <p>View</p>
-            <p>Share</p>
+            <div style="grid-column: 1 / 3">
+              <p id="project-title">Ad Blocker</p>
+              <p id="description">Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+            </div>
+            <div style="grid-column: 2 / 3; display: grid; gap: 15px; grid-template-columns: 1fr 1fr 1fr;">
+              <iconify-icon icon="mdi:favorite-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:eye-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:ios-share" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+            </div>
           </div>
           
           <div class="project">
-            <p id="project-title">Money Maker</p>
-            <p id="description">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis sem vel aliquam.</p>
-            <p>Favorite</p>
-            <p>View</p>
-            <p>Share</p>
+            <div style="grid-column: 1 / 3">
+              <p id="project-title">Money Maker</p>
+              <p id="description">Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis sem vel aliquam.</p>
+            </div>
+            <div style="grid-column: 2 / 3; display: grid; gap: 15px; grid-template-columns: 1fr 1fr 1fr;">
+              <iconify-icon icon="mdi:favorite-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:eye-add-outline" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+              <iconify-icon icon="mdi:ios-share" height="28px" style="color: rgb(83, 83, 83);"></iconify-icon>
+            </div>
           </div>
         </div>
         
@@ -125,20 +173,32 @@
           <div class="trending" style="padding-top: 20px;">
             <p id="title" style="padding-bottom: 10px;">Trending</p>
             <div class="avatars">
-              <div class="avatar">
-                <p style="color: black;;">@tegan</p>
+              <div class="avatar" style="display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: 1fr 1fr;">
+                <div style="grid-row: 1 / 3">
+                  <iconify-icon icon="emojione-v1:bear-face" height="40px"></iconify-icon>
+                </div>
+                <p style="color: black;">@tegan</p>
                 <p>World Peace Builder</p>
               </div>
-              <div class="avatar">
-                <p style="color: black; padding-top: 20px;">@morgan</p>
+              <div class="avatar" style="display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: 1fr 1fr;">
+                <div style="grid-row: 1 / 3">
+                  <iconify-icon icon="emojione-v1:ghost" height="40px"></iconify-icon>
+                </div>
+                <p style="color: black;">@morgan</p>
                 <p>Super Cool Project</p>
               </div>
-              <div class="avatar">
-                <p style="color: black; padding-top: 20px;">@kendall</p>
+              <div class="avatar" style="display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: 1fr 1fr;">
+                <div style="grid-row: 1 / 3">
+                  <iconify-icon icon="emojione-v1:bird" height="40px"></iconify-icon>
+                </div>
+                <p style="color: black;">@kendall</p>
                 <p>Life Changing App</p>
               </div>
-              <div class="avatar">
-                <p style="color: black; padding-top: 20px;">@alex</p>
+              <div class="avatar" style="display: grid; grid-template-columns: 1fr 3fr; grid-template-rows: 1fr 1fr;">
+                <div style="grid-row: 1 / 3">
+                  <iconify-icon icon="emojione-v1:cow-face" height="40px"></iconify-icon>
+                </div>
+                <p style="color: black;">@alex</p>
                 <p>No Traffic Maker</p>
               </div>
             </div>
